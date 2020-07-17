@@ -1,0 +1,69 @@
+$mColor:rgb(80, 80, 80);
+$sColor:rgb(0, 0, 0);
+
+div#body{
+ width: 1000px;
+ height: 10px;
+ 
+ background-color:transparent;
+ margin: 200px 1900px  600px 650px;
+ div#border{
+ width: 860px;height: 499px;
+ background-color:$mColor ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  div#screen{
+   background-color: $sColor;
+   width: 830px;height: 470px;
+   border: 0.1px solid rgba(128, 128, 128, 0.74);
+  
+    transition: 1s;
+      &:hover{
+       
+       opacity: 0.5;
+       transition: 1s;
+      }
+    h1{
+     color:rgb(15, 238, 15);
+     font-size: 30px;
+     font-family: monospace;
+     filter: drop-shadow(0px 11px 310px rgb(0, 255, 0));
+     margin-inline-start: 13px;
+     z-index: 1;
+     height: 10px;
+     width: 800px;
+      span{
+       animation: popup 0.5s infinite ;
+      }
+     
+    }
+   
+  }
+}
+ div#keys{
+  width: 950px;
+  height: 20px;
+  background-color: $mColor;
+  border: 0.1px solid rgba(128, 128, 128, 0.74);
+  position: relative;
+  margin-left: -45px;
+  box-shadow: 1px 1px 31px rgba(255, 255, 255, 0.575);
+ }
+}
+
+@keyframes popup{
+  from{
+   opacity: 0;
+  }
+  to{
+   opacity: 1;
+  }
+}
+
+h4{
+ text-align: center;
+ font-family: sans-serif;
+ color: $mColor;
+ opacity: 0.6;
+}
